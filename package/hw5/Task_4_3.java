@@ -1,3 +1,5 @@
+package hw5;
+
 public class Task_4_3 {
     public static void main(String[] args) {
         int side1 = 7;
