@@ -1,3 +1,5 @@
+package hw5;
+
 public class Task_4_2 {
     public static void main(String[] args) {
         double cels = 36.6;
