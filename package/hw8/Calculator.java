@@ -2,46 +2,23 @@ package hw8;
 
 public class Calculator {
 
-    public static int a = 2;
-    public static int b = 0;
-    public static int sum = 0;
-    public static int difference = 0;
-    public static int product = 0;
-    public static double quotient = 0;
 
-
-    public static void addition(int a, int b)
+    public static void addition(double a, double b)
     {
-        sum = a + b;
-    }
-
-    public static void printAddition()
-    {
-        addition(a, b);
+        double sum = a + b;
         System.out.println("Sum: " + sum);
     }
 
 
-    public static void subtraction(int a, int b)
+    public static void subtraction(double a, double b)
     {
-        difference = a - b;
-    }
-
-    public static void printSubtraction()
-    {
-        subtraction(a, b);
+        double difference = a - b;
         System.out.println("Difference: " + difference);
     }
 
-
-    public static void multiplication(int a, int b)
+    public static void multiplication(double a, double b)
     {
-        product = a * b;
-    }
-
-    public static void printMultiplication()
-    {
-        multiplication(a, b);
+        double product = a * b;
         System.out.println("Product: " + product);
     }
 
@@ -50,19 +27,11 @@ public class Calculator {
     {
         if (b != 0)
         {
-            quotient = a / b;
+           double quotient = a / b;
+           System.out.println("Quotient: " + quotient);
         } else
         {
             System.out.println("Cannot divide by zero");
-            return;
-        }
-    }
-
-    public static void printDivision()
-    {
-        division(a, b);
-        if(b != 0) {
-            System.out.println("Quotient: " + quotient);
         }
     }
 
