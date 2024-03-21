@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>hw14</module>
+        <module>hw16</module>
     </modules>
 
     <properties>
