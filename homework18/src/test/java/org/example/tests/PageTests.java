@@ -1,19 +1,19 @@
 package org.example.tests;
 
-import org.example.pages.CardPage;
-import org.example.pages.DropdownPage;
-import org.example.pages.HomePage;
-import org.example.pages.RadioButtonPage;
+import org.example.pages.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -27,6 +27,10 @@ public class PageTests {
     private CardPage cardPage;
     private RadioButtonPage radioButtonPage;
     private DropdownPage dropdownPage;
+    private DropdownPage1 dropdownPage1;
+
+
+
 
     @BeforeTest
     public void initBrowser() {
@@ -38,6 +42,7 @@ public class PageTests {
         cardPage = new CardPage(driver);
         radioButtonPage = new RadioButtonPage(driver);
         dropdownPage  = new DropdownPage(driver);
+        dropdownPage1  = new DropdownPage1(driver);
 
     }
 
@@ -128,7 +133,7 @@ public class PageTests {
 
 
     @Test
-    public void dropdownTest() {
+    public void dropdownTest1() {
 
         driver.get("https://www.enbook.sk/");
 
@@ -146,15 +151,35 @@ public class PageTests {
 
     }
 
+    @Test
+    public void dropdownTest2() {
+        driver.get("https://demoqa.com/select-menu");
 
 
+        dropdownPage1.scroll(driver);
 
-//    @AfterTest
-//    public void closeDriver() {
-//        if(driver != null) {
-//            driver.quit();
-//        }
-//    }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+        List<String> actualResult = dropdownPage1.selectAllOptions();
+
+        List<String> expectedResult = Arrays.asList("Group 1, option 1", "Group 1, option 2", "Group 2, option 1", "Group 2, option 2", "A root option", "Another root option");
+
+        assertEquals(expectedResult, actualResult);
+
+    }
+
+
+    @AfterTest
+    public void closeDriver() {
+        if(driver != null) {
+            driver.quit();
+        }
+    }
 
 
 

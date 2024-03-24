@@ -3,7 +3,10 @@ package org.example.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +41,7 @@ public class DropdownPage {
         optionXPaths.add(fourth);
         optionXPaths.add(fifth);
 
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
 
         for (By optionXPath : optionXPaths) {
 
@@ -50,6 +54,8 @@ public class DropdownPage {
                 e.printStackTrace();
             }
 
+            //wait.until(ExpectedConditions.visibilityOfElementLocated(optionXPath));
+
             WebElement option = driver.findElement(optionXPath);
 
             option.click();
@@ -59,6 +65,8 @@ public class DropdownPage {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
+           // wait.until(ExpectedConditions.visibilityOfElementLocated(dropdownOptions));
 
             WebElement spanElement = driver.findElement(dropdownOptions);
             String spanText = spanElement.getText();
