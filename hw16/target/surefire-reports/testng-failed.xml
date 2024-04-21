@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.tests.ParametrizedTest">
+        <methods>
+          <include name="beforeEachTest"/>
+          <include name="testCheckIfUsersHaveLastNameStartingWithSOrA_Parametrized" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="afterEachTest"/>
+        </methods>
+      </class> <!-- org.tests.ParametrizedTest -->
+      <class name="org.tests.UserOperationsImplTest">
+        <methods>
+          <include name="testSortByAge_2"/>
+          <include name="beforeEachTest"/>
+          <include name="testSortByAge_1"/>
+          <include name="testCalculateAverageAge_2"/>
+          <include name="testCheckIfUsersHaveLastNameStartingWithSOrA_EmptyList"/>
+          <include name="setUp"/>
+          <include name="testCalculateAverageAge_1"/>
+          <include name="testSortByMultipleProperties_1"/>
+          <include name="tearDown"/>
+          <include name="afterEachTest"/>
+        </methods>
+      </class> <!-- org.tests.UserOperationsImplTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

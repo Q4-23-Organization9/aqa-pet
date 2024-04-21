@@ -1,0 +1,4 @@
+org\tests\ParametrizedTest.class
+org\tests\BaseTest.class
+org\tests\dataProvider\DataProviderClass.class
+org\tests\UserOperationsImplTest.class

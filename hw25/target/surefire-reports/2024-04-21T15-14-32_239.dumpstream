@@ -1,0 +1,5 @@
+# Created at 2024-04-21T15:14:32.587
+Boot Manifest-JAR contains absolute paths in classpath 'D:\GitRepoJava\aqa-pet\hw25\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

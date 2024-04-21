@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 16 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Test_Suite" class="navigator-link ">
+                    <span>D:\GitRepoJava\aqa-pet\hw25\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">43 methods, 16 failed,   27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods failed suite-Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Test_Suite" class="show-methods failed suite-Test_Suite"> (show)</a> <!-- show-methods failed suite-Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="negativeTestCreateUser(/api/users123, UserName1, UserJob1)">negativeTestCreateUser(/api/users123, UserName1, UserJob1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="negativeTestCreateUser(/api/us, UserName2, UserJob2)">negativeTestCreateUser(/api/us, UserName2, UserJob2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="negativeTestCreateUser(/api/*, UserName4, UserJob4)">negativeTestCreateUser(/api/*, UserName4, UserJob4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="negativeTestCreateUser(/api/us%#*, UserName3, UserJob3)">negativeTestCreateUser(/api/us%#*, UserName3, UserJob3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testDeleteNonExistingUser(111)">testDeleteNonExistingUser(111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testDeleteNonExistingUser(1125555555)">testDeleteNonExistingUser(1125555555)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testDeleteNonExistingUser(29)">testDeleteNonExistingUser(29)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testDeleteNonExistingUser(28)">testDeleteNonExistingUser(28)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testDeleteNonExistingUser(30)">testDeleteNonExistingUser(30)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testDeleteNonExistingUser(23)">testDeleteNonExistingUser(23)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testUpdateNonExistingUser(57, UpdatedName5, UpdatedJob5)">testUpdateNonExistingUser(57, UpdatedName5, UpdatedJob5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testUpdateNonExistingUser(28, UpdatedName2, UpdatedJob2)">testUpdateNonExistingUser(28, UpdatedName2, UpdatedJob2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testUpdateNonExistingUser(45, UpdatedName4, UpdatedJob4)">testUpdateNonExistingUser(45, UpdatedName4, UpdatedJob4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testUpdateNonExistingUser(23, UpdatedName1, UpdatedJob1)">testUpdateNonExistingUser(23, UpdatedName1, UpdatedJob1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testUpdateNonExistingUser(39, UpdatedName3, UpdatedJob3)">testUpdateNonExistingUser(39, UpdatedName3, UpdatedJob3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testUpdateNonExistingUser(69, UpdatedName6, UpdatedJob6)">testUpdateNonExistingUser(69, UpdatedName6, UpdatedJob6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods passed suite-Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Test_Suite" class="show-methods passed suite-Test_Suite"> (show)</a> <!-- show-methods passed suite-Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="positiveDeleteUser(5)">positiveDeleteUser(5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="positiveDeleteUser(4)">positiveDeleteUser(4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="positiveDeleteUser(6)">positiveDeleteUser(6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="positiveDeleteUser(3)">positiveDeleteUser(3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="positiveDeleteUser(2)">positiveDeleteUser(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="positiveDeleteUser(1)">positiveDeleteUser(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testCreateUser(John, Developer)">testCreateUser(John, Developer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testCreateUser(Olha, AQA)">testCreateUser(Olha, AQA)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testCreateUser(, )">testCreateUser(, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testGetExistingUser(3)">testGetExistingUser(3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testGetExistingUser(5)">testGetExistingUser(5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testGetExistingUser(1)">testGetExistingUser(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testGetExistingUser(2)">testGetExistingUser(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testGetExistingUser(6)">testGetExistingUser(6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testGetExistingUser(4)">testGetExistingUser(4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testGetNonExistingUser(28)">testGetNonExistingUser(28)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testGetNonExistingUser(29)">testGetNonExistingUser(29)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testGetNonExistingUser(30)">testGetNonExistingUser(30)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testGetNonExistingUser(111)">testGetNonExistingUser(111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testGetNonExistingUser(1125555555)">testGetNonExistingUser(1125555555)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.NegativeTests" class="method navigator-link" hash-for-method="testGetNonExistingUser(23)">testGetNonExistingUser(23)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testUpdateUser(4, UpdatedName4, UpdatedJob4)">testUpdateUser(4, UpdatedName4, UpdatedJob4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testUpdateUser(6, UpdatedName6, UpdatedJob6)">testUpdateUser(6, UpdatedName6, UpdatedJob6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testUpdateUser(5, UpdatedName5, UpdatedJob5)">testUpdateUser(5, UpdatedName5, UpdatedJob5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testUpdateUser(1, UpdatedName1, UpdatedJob1)">testUpdateUser(1, UpdatedName1, UpdatedJob1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testUpdateUser(2, UpdatedName2, UpdatedJob2)">testUpdateUser(2, UpdatedName2, UpdatedJob2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="com.example.tests.PositiveTests" class="method navigator-link" hash-for-method="testUpdateUser(3, UpdatedName3, UpdatedJob3)">testUpdateUser(3, UpdatedName3, UpdatedJob3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_Suite" class="panel Test_Suite">
+          <div class="suite-Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.tests.NegativeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeTestCreateUser(/api/users123, UserName1, UserJob1)">
+                  </a> <!-- negativeTestCreateUser(/api/users123, UserName1, UserJob1) -->
+                  <span class="method-name">negativeTestCreateUser</span>
+                  <span class="parameters">(/api/users123, UserName1, UserJob1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;201&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.negativeTestCreateUser(NegativeTests.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeTestCreateUser(/api/us, UserName2, UserJob2)">
+                  </a> <!-- negativeTestCreateUser(/api/us, UserName2, UserJob2) -->
+                  <span class="method-name">negativeTestCreateUser</span>
+                  <span class="parameters">(/api/us, UserName2, UserJob2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;201&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.negativeTestCreateUser(NegativeTests.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeTestCreateUser(/api/*, UserName4, UserJob4)">
+                  </a> <!-- negativeTestCreateUser(/api/*, UserName4, UserJob4) -->
+                  <span class="method-name">negativeTestCreateUser</span>
+                  <span class="parameters">(/api/*, UserName4, UserJob4)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;201&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.negativeTestCreateUser(NegativeTests.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeTestCreateUser(/api/us%#*, UserName3, UserJob3)">
+                  </a> <!-- negativeTestCreateUser(/api/us%#*, UserName3, UserJob3) -->
+                  <span class="method-name">negativeTestCreateUser</span>
+                  <span class="parameters">(/api/us%#*, UserName3, UserJob3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;201&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.negativeTestCreateUser(NegativeTests.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteNonExistingUser(111)">
+                  </a> <!-- testDeleteNonExistingUser(111) -->
+                  <span class="method-name">testDeleteNonExistingUser</span>
+                  <span class="parameters">(111)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testDeleteNonExistingUser(NegativeTests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteNonExistingUser(1125555555)">
+                  </a> <!-- testDeleteNonExistingUser(1125555555) -->
+                  <span class="method-name">testDeleteNonExistingUser</span>
+                  <span class="parameters">(1125555555)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testDeleteNonExistingUser(NegativeTests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteNonExistingUser(29)">
+                  </a> <!-- testDeleteNonExistingUser(29) -->
+                  <span class="method-name">testDeleteNonExistingUser</span>
+                  <span class="parameters">(29)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testDeleteNonExistingUser(NegativeTests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteNonExistingUser(28)">
+                  </a> <!-- testDeleteNonExistingUser(28) -->
+                  <span class="method-name">testDeleteNonExistingUser</span>
+                  <span class="parameters">(28)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testDeleteNonExistingUser(NegativeTests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteNonExistingUser(30)">
+                  </a> <!-- testDeleteNonExistingUser(30) -->
+                  <span class="method-name">testDeleteNonExistingUser</span>
+                  <span class="parameters">(30)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testDeleteNonExistingUser(NegativeTests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteNonExistingUser(23)">
+                  </a> <!-- testDeleteNonExistingUser(23) -->
+                  <span class="method-name">testDeleteNonExistingUser</span>
+                  <span class="parameters">(23)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testDeleteNonExistingUser(NegativeTests.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateNonExistingUser(57, UpdatedName5, UpdatedJob5)">
+                  </a> <!-- testUpdateNonExistingUser(57, UpdatedName5, UpdatedJob5) -->
+                  <span class="method-name">testUpdateNonExistingUser</span>
+                  <span class="parameters">(57, UpdatedName5, UpdatedJob5)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testUpdateNonExistingUser(NegativeTests.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateNonExistingUser(28, UpdatedName2, UpdatedJob2)">
+                  </a> <!-- testUpdateNonExistingUser(28, UpdatedName2, UpdatedJob2) -->
+                  <span class="method-name">testUpdateNonExistingUser</span>
+                  <span class="parameters">(28, UpdatedName2, UpdatedJob2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testUpdateNonExistingUser(NegativeTests.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateNonExistingUser(45, UpdatedName4, UpdatedJob4)">
+                  </a> <!-- testUpdateNonExistingUser(45, UpdatedName4, UpdatedJob4) -->
+                  <span class="method-name">testUpdateNonExistingUser</span>
+                  <span class="parameters">(45, UpdatedName4, UpdatedJob4)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testUpdateNonExistingUser(NegativeTests.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateNonExistingUser(23, UpdatedName1, UpdatedJob1)">
+                  </a> <!-- testUpdateNonExistingUser(23, UpdatedName1, UpdatedJob1) -->
+                  <span class="method-name">testUpdateNonExistingUser</span>
+                  <span class="parameters">(23, UpdatedName1, UpdatedJob1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testUpdateNonExistingUser(NegativeTests.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateNonExistingUser(39, UpdatedName3, UpdatedJob3)">
+                  </a> <!-- testUpdateNonExistingUser(39, UpdatedName3, UpdatedJob3) -->
+                  <span class="method-name">testUpdateNonExistingUser</span>
+                  <span class="parameters">(39, UpdatedName3, UpdatedJob3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testUpdateNonExistingUser(NegativeTests.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateNonExistingUser(69, UpdatedName6, UpdatedJob6)">
+                  </a> <!-- testUpdateNonExistingUser(69, UpdatedName6, UpdatedJob6) -->
+                  <span class="method-name">testUpdateNonExistingUser</span>
+                  <span class="parameters">(69, UpdatedName6, UpdatedJob6)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.tests.NegativeTests.testUpdateNonExistingUser(NegativeTests.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-failed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.tests.NegativeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNonExistingUser(28)">
+                  </a> <!-- testGetNonExistingUser(28) -->
+                  <span class="method-name">testGetNonExistingUser</span>
+                  <span class="parameters">(28)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNonExistingUser(29)">
+                  </a> <!-- testGetNonExistingUser(29) -->
+                  <span class="method-name">testGetNonExistingUser</span>
+                  <span class="parameters">(29)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNonExistingUser(30)">
+                  </a> <!-- testGetNonExistingUser(30) -->
+                  <span class="method-name">testGetNonExistingUser</span>
+                  <span class="parameters">(30)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNonExistingUser(111)">
+                  </a> <!-- testGetNonExistingUser(111) -->
+                  <span class="method-name">testGetNonExistingUser</span>
+                  <span class="parameters">(111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNonExistingUser(1125555555)">
+                  </a> <!-- testGetNonExistingUser(1125555555) -->
+                  <span class="method-name">testGetNonExistingUser</span>
+                  <span class="parameters">(1125555555)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetNonExistingUser(23)">
+                  </a> <!-- testGetNonExistingUser(23) -->
+                  <span class="method-name">testGetNonExistingUser</span>
+                  <span class="parameters">(23)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+          <div class="suite-Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.tests.PositiveTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDeleteUser(5)">
+                  </a> <!-- positiveDeleteUser(5) -->
+                  <span class="method-name">positiveDeleteUser</span>
+                  <span class="parameters">(5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDeleteUser(4)">
+                  </a> <!-- positiveDeleteUser(4) -->
+                  <span class="method-name">positiveDeleteUser</span>
+                  <span class="parameters">(4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDeleteUser(6)">
+                  </a> <!-- positiveDeleteUser(6) -->
+                  <span class="method-name">positiveDeleteUser</span>
+                  <span class="parameters">(6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDeleteUser(3)">
+                  </a> <!-- positiveDeleteUser(3) -->
+                  <span class="method-name">positiveDeleteUser</span>
+                  <span class="parameters">(3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDeleteUser(2)">
+                  </a> <!-- positiveDeleteUser(2) -->
+                  <span class="method-name">positiveDeleteUser</span>
+                  <span class="parameters">(2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="positiveDeleteUser(1)">
+                  </a> <!-- positiveDeleteUser(1) -->
+                  <span class="method-name">positiveDeleteUser</span>
+                  <span class="parameters">(1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(John, Developer)">
+                  </a> <!-- testCreateUser(John, Developer) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(John, Developer)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(Olha, AQA)">
+                  </a> <!-- testCreateUser(Olha, AQA) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(Olha, AQA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUser(, )">
+                  </a> <!-- testCreateUser(, ) -->
+                  <span class="method-name">testCreateUser</span>
+                  <span class="parameters">(, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetExistingUser(3)">
+                  </a> <!-- testGetExistingUser(3) -->
+                  <span class="method-name">testGetExistingUser</span>
+                  <span class="parameters">(3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetExistingUser(5)">
+                  </a> <!-- testGetExistingUser(5) -->
+                  <span class="method-name">testGetExistingUser</span>
+                  <span class="parameters">(5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetExistingUser(1)">
+                  </a> <!-- testGetExistingUser(1) -->
+                  <span class="method-name">testGetExistingUser</span>
+                  <span class="parameters">(1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetExistingUser(2)">
+                  </a> <!-- testGetExistingUser(2) -->
+                  <span class="method-name">testGetExistingUser</span>
+                  <span class="parameters">(2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetExistingUser(6)">
+                  </a> <!-- testGetExistingUser(6) -->
+                  <span class="method-name">testGetExistingUser</span>
+                  <span class="parameters">(6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetExistingUser(4)">
+                  </a> <!-- testGetExistingUser(4) -->
+                  <span class="method-name">testGetExistingUser</span>
+                  <span class="parameters">(4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUser(4, UpdatedName4, UpdatedJob4)">
+                  </a> <!-- testUpdateUser(4, UpdatedName4, UpdatedJob4) -->
+                  <span class="method-name">testUpdateUser</span>
+                  <span class="parameters">(4, UpdatedName4, UpdatedJob4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUser(6, UpdatedName6, UpdatedJob6)">
+                  </a> <!-- testUpdateUser(6, UpdatedName6, UpdatedJob6) -->
+                  <span class="method-name">testUpdateUser</span>
+                  <span class="parameters">(6, UpdatedName6, UpdatedJob6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUser(5, UpdatedName5, UpdatedJob5)">
+                  </a> <!-- testUpdateUser(5, UpdatedName5, UpdatedJob5) -->
+                  <span class="method-name">testUpdateUser</span>
+                  <span class="parameters">(5, UpdatedName5, UpdatedJob5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUser(1, UpdatedName1, UpdatedJob1)">
+                  </a> <!-- testUpdateUser(1, UpdatedName1, UpdatedJob1) -->
+                  <span class="method-name">testUpdateUser</span>
+                  <span class="parameters">(1, UpdatedName1, UpdatedJob1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUser(2, UpdatedName2, UpdatedJob2)">
+                  </a> <!-- testUpdateUser(2, UpdatedName2, UpdatedJob2) -->
+                  <span class="method-name">testUpdateUser</span>
+                  <span class="parameters">(2, UpdatedName2, UpdatedJob2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUser(3, UpdatedName3, UpdatedJob3)">
+                  </a> <!-- testUpdateUser(3, UpdatedName3, UpdatedJob3) -->
+                  <span class="method-name">testUpdateUser</span>
+                  <span class="parameters">(3, UpdatedName3, UpdatedJob3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-passed -->
+        </div> <!-- panel Test_Suite -->
+        <div panel-name="test-xml-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\GitRepoJava\aqa-pet\hw25\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Positive and Negative Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.tests.PositiveTests&quot;/&gt;
+      &lt;class name=&quot;com.example.tests.NegativeTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Positive and Negative Tests --&gt;
+&lt;/suite&gt; &lt;!-- Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Positive and Negative Tests (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_Suite');
+function tableData_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(43);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCreateUser')
+data.setCell(0, 2, 'com.example.tests.PositiveTests')
+data.setCell(0, 3, 2621);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'positiveDeleteUser')
+data.setCell(1, 2, 'com.example.tests.PositiveTests')
+data.setCell(1, 3, 2465);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCreateUser')
+data.setCell(2, 2, 'com.example.tests.PositiveTests')
+data.setCell(2, 3, 329);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'negativeTestCreateUser')
+data.setCell(3, 2, 'com.example.tests.NegativeTests')
+data.setCell(3, 3, 291);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testUpdateUser')
+data.setCell(4, 2, 'com.example.tests.PositiveTests')
+data.setCell(4, 3, 282);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testUpdateUser')
+data.setCell(5, 2, 'com.example.tests.PositiveTests')
+data.setCell(5, 3, 267);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testUpdateUser')
+data.setCell(6, 2, 'com.example.tests.PositiveTests')
+data.setCell(6, 3, 266);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testCreateUser')
+data.setCell(7, 2, 'com.example.tests.PositiveTests')
+data.setCell(7, 3, 264);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'positiveDeleteUser')
+data.setCell(8, 2, 'com.example.tests.PositiveTests')
+data.setCell(8, 3, 258);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testUpdateUser')
+data.setCell(9, 2, 'com.example.tests.PositiveTests')
+data.setCell(9, 3, 258);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testUpdateUser')
+data.setCell(10, 2, 'com.example.tests.PositiveTests')
+data.setCell(10, 3, 257);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testUpdateUser')
+data.setCell(11, 2, 'com.example.tests.PositiveTests')
+data.setCell(11, 3, 254);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'positiveDeleteUser')
+data.setCell(12, 2, 'com.example.tests.PositiveTests')
+data.setCell(12, 3, 228);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'positiveDeleteUser')
+data.setCell(13, 2, 'com.example.tests.PositiveTests')
+data.setCell(13, 3, 220);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testDeleteNonExistingUser')
+data.setCell(14, 2, 'com.example.tests.NegativeTests')
+data.setCell(14, 3, 205);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'negativeTestCreateUser')
+data.setCell(15, 2, 'com.example.tests.NegativeTests')
+data.setCell(15, 3, 201);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'positiveDeleteUser')
+data.setCell(16, 2, 'com.example.tests.PositiveTests')
+data.setCell(16, 3, 200);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testUpdateNonExistingUser')
+data.setCell(17, 2, 'com.example.tests.NegativeTests')
+data.setCell(17, 3, 197);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testUpdateNonExistingUser')
+data.setCell(18, 2, 'com.example.tests.NegativeTests')
+data.setCell(18, 3, 196);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testDeleteNonExistingUser')
+data.setCell(19, 2, 'com.example.tests.NegativeTests')
+data.setCell(19, 3, 196);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'positiveDeleteUser')
+data.setCell(20, 2, 'com.example.tests.PositiveTests')
+data.setCell(20, 3, 195);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testUpdateNonExistingUser')
+data.setCell(21, 2, 'com.example.tests.NegativeTests')
+data.setCell(21, 3, 195);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'negativeTestCreateUser')
+data.setCell(22, 2, 'com.example.tests.NegativeTests')
+data.setCell(22, 3, 195);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testGetNonExistingUser')
+data.setCell(23, 2, 'com.example.tests.NegativeTests')
+data.setCell(23, 3, 191);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testUpdateNonExistingUser')
+data.setCell(24, 2, 'com.example.tests.NegativeTests')
+data.setCell(24, 3, 190);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testGetNonExistingUser')
+data.setCell(25, 2, 'com.example.tests.NegativeTests')
+data.setCell(25, 3, 189);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testDeleteNonExistingUser')
+data.setCell(26, 2, 'com.example.tests.NegativeTests')
+data.setCell(26, 3, 188);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testDeleteNonExistingUser')
+data.setCell(27, 2, 'com.example.tests.NegativeTests')
+data.setCell(27, 3, 186);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testGetNonExistingUser')
+data.setCell(28, 2, 'com.example.tests.NegativeTests')
+data.setCell(28, 3, 185);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testGetNonExistingUser')
+data.setCell(29, 2, 'com.example.tests.NegativeTests')
+data.setCell(29, 3, 182);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testDeleteNonExistingUser')
+data.setCell(30, 2, 'com.example.tests.NegativeTests')
+data.setCell(30, 3, 182);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testUpdateNonExistingUser')
+data.setCell(31, 2, 'com.example.tests.NegativeTests')
+data.setCell(31, 3, 179);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testUpdateNonExistingUser')
+data.setCell(32, 2, 'com.example.tests.NegativeTests')
+data.setCell(32, 3, 179);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testGetNonExistingUser')
+data.setCell(33, 2, 'com.example.tests.NegativeTests')
+data.setCell(33, 3, 178);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testGetNonExistingUser')
+data.setCell(34, 2, 'com.example.tests.NegativeTests')
+data.setCell(34, 3, 175);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'negativeTestCreateUser')
+data.setCell(35, 2, 'com.example.tests.NegativeTests')
+data.setCell(35, 3, 173);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testDeleteNonExistingUser')
+data.setCell(36, 2, 'com.example.tests.NegativeTests')
+data.setCell(36, 3, 169);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testGetExistingUser')
+data.setCell(37, 2, 'com.example.tests.PositiveTests')
+data.setCell(37, 3, 168);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testGetExistingUser')
+data.setCell(38, 2, 'com.example.tests.PositiveTests')
+data.setCell(38, 3, 144);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testGetExistingUser')
+data.setCell(39, 2, 'com.example.tests.PositiveTests')
+data.setCell(39, 3, 138);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testGetExistingUser')
+data.setCell(40, 2, 'com.example.tests.PositiveTests')
+data.setCell(40, 3, 138);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testGetExistingUser')
+data.setCell(41, 2, 'com.example.tests.PositiveTests')
+data.setCell(41, 3, 135);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testGetExistingUser')
+data.setCell(42, 2, 'com.example.tests.PositiveTests')
+data.setCell(42, 3, 133);
+window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <div id="times-div-Test_Suite">
+              </div> <!-- times-div-Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.tests.NegativeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.tests.PositiveTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpSuite</span>
+                <span class="method-start">1452 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">positiveDeleteUser(1)</span>
+                <span class="method-start">1707 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveDeleteUser(2)</span>
+                <span class="method-start">4426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveDeleteUser(3)</span>
+                <span class="method-start">4659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveDeleteUser(4)</span>
+                <span class="method-start">4856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveDeleteUser(5)</span>
+                <span class="method-start">5082 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">positiveDeleteUser(6)</span>
+                <span class="method-start">5287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(Olha, AQA)</span>
+                <span class="method-start">5562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(John, Developer)</span>
+                <span class="method-start">8186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateUser(, )</span>
+                <span class="method-start">8517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetExistingUser(1)</span>
+                <span class="method-start">8786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetExistingUser(2)</span>
+                <span class="method-start">8956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetExistingUser(3)</span>
+                <span class="method-start">9095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetExistingUser(4)</span>
+                <span class="method-start">9237 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetExistingUser(5)</span>
+                <span class="method-start">9376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetExistingUser(6)</span>
+                <span class="method-start">9510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUser(1, UpdatedName1, UpdatedJob1)</span>
+                <span class="method-start">9658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUser(2, UpdatedName2, UpdatedJob2)</span>
+                <span class="method-start">9948 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUser(3, UpdatedName3, UpdatedJob3)</span>
+                <span class="method-start">10213 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUser(4, UpdatedName4, UpdatedJob4)</span>
+                <span class="method-start">10471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUser(5, UpdatedName5, UpdatedJob5)</span>
+                <span class="method-start">10742 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUser(6, UpdatedName6, UpdatedJob6)</span>
+                <span class="method-start">11013 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.tests.NegativeTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">negativeTestCreateUser(/api/users123, UserName1, UserJob1)</span>
+                <span class="method-start">11274 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">negativeTestCreateUser(/api/us, UserName2, UserJob2)</span>
+                <span class="method-start">11574 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">negativeTestCreateUser(/api/us%#*, UserName3, UserJob3)</span>
+                <span class="method-start">11785 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">negativeTestCreateUser(/api/*, UserName4, UserJob4)</span>
+                <span class="method-start">11983 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteNonExistingUser(23)</span>
+                <span class="method-start">12165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteNonExistingUser(28)</span>
+                <span class="method-start">12349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteNonExistingUser(29)</span>
+                <span class="method-start">12520 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteNonExistingUser(30)</span>
+                <span class="method-start">12731 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteNonExistingUser(111)</span>
+                <span class="method-start">12931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteNonExistingUser(1125555555)</span>
+                <span class="method-start">13127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNonExistingUser(23)</span>
+                <span class="method-start">13317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNonExistingUser(28)</span>
+                <span class="method-start">13497 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNonExistingUser(29)</span>
+                <span class="method-start">13681 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNonExistingUser(30)</span>
+                <span class="method-start">13874 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNonExistingUser(111)</span>
+                <span class="method-start">14060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetNonExistingUser(1125555555)</span>
+                <span class="method-start">14237 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateNonExistingUser(23, UpdatedName1, UpdatedJob1)</span>
+                <span class="method-start">14429 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateNonExistingUser(28, UpdatedName2, UpdatedJob2)</span>
+                <span class="method-start">14628 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateNonExistingUser(39, UpdatedName3, UpdatedJob3)</span>
+                <span class="method-start">14825 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateNonExistingUser(45, UpdatedName4, UpdatedJob4)</span>
+                <span class="method-start">15007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateNonExistingUser(57, UpdatedName5, UpdatedJob5)</span>
+                <span class="method-start">15199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateNonExistingUser(69, UpdatedName6, UpdatedJob6)</span>
+                <span class="method-start">15401 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
