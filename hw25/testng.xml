@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <test name="Positive and Negative Tests">
+        <classes>
+            <class name="com.example.tests.PositiveTests"/>
+            <class name="com.example.tests.NegativeTests"/>
+        </classes>
+    </test>
+</suite>
