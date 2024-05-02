@@ -16,13 +16,14 @@
         <module>hw21</module>
         <module>homework18</module>
         <module>hw23</module>
+        <module>hw24</module>
     </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>4.18.1</selenium.version>
+        <selenium.version>4.13.0</selenium.version>
     </properties>
 
     <dependencies>
@@ -46,6 +47,16 @@
 
     </dependencies>
 
-
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.2.5</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
     
 </project>
